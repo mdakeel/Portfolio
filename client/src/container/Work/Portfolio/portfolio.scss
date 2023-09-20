@@ -1,0 +1,107 @@
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    
+    @media screen and (max-width: 450px) {
+    margin-right: 30px;
+   
+    }
+}
+.project {
+    background-color: #fff;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    box-shadow:  0 8px 12px rgb(0,0,0, 0.2);
+    border-radius: 5px;
+    margin: 1rem;
+    transition: .3s;
+    
+    width: 18rem;
+    height: 16rem;
+  
+    
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0);
+  transition: .3s;
+}
+
+.portfolio-container:hover .overlay {
+  display: block;
+  width: 18rem;
+  overflow: hidden;
+  height: 13rem;
+  background: rgba(0, 0, 0, .3);
+}
+
+.portfolio-container img {
+  margin-top: -20px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 18rem;
+  height: 13rem;
+}
+
+.icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 90px;
+  top: 80px;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.icon i {
+  font-size: 35px;
+  padding: 10px;
+  text-shadow:  0 8px 12px rgb(0,0,0, 0.6);
+  color: #fff;
+  text-align: center;
+  transition: .3s;
+  z-index: 1;
+}
+
+.icon i:hover{
+  font-size: 33px;
+  color: #313bac;
+}
+
+.portfolio-container:hover .icon {
+  opacity: 1;
+}
+    h4{
+        margin-top: -15px;
+        text-align: center; 
+    }
+    
+    p{
+      margin-top: -10px;
+        text-align: center;
+    }
+  
+    @media screen and (min-width: 2000px) {
+      width: 370px;
+      margin: 2rem 4rem;
+  
+      img {
+        height: 320px;
+      }
+    }
+}
+
+.project:hover{
+   box-shadow: none;
+}
+
